@@ -1,0 +1,6 @@
+#!/bin/bash
+
+dir="`dirname \"$0\"`/.."
+docker-compose -f "$dir/tools/docker-compose.yml" pull
+docker-compose -f "$dir/tools/docker-compose.yml" stop
+docker-compose -f "$dir/tools/docker-compose.yml" up -d
