@@ -13,17 +13,6 @@ sudo chmod +x /usr/local/bin/docker-compose &&
 
 sudo apt install default-jre -y &&
 
-sudo service apache2 stop &&
-sudo apt-get purge apache2 apache2-utils -y &&
-sudo apt-get autoremove &&
-
-sudo rm -rf /etc/apache2 &&
-sudo rm -rf /usr/sbin/apache2 &&
-sudo rm -rf /usr/lib/apache2 &&
-sudo rm -rf /usr/share/apache2 &&
-sudo rm -rf /usr/share/man/man8/apache2.8.gz &&
-
-whereis apache2 &&
 java -version &&
 docker-compose --version &&
 
